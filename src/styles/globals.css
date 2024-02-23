@@ -58,9 +58,10 @@
 .main-text {
     width: 100%;
     height: auto;
-    background-color: #f5c5c5;
-    margin: 200px 0 200px 0;
-    padding: 30rem 0 30rem 0;
+    /* background-color: rgba(255, 182, 193, 0.253); */
+    margin: 200px 0 100px 0;
+    padding: 20rem 0 20rem 0;
+    border: thin solid lightgrey;
 }
 
 .main-text p {
@@ -74,9 +75,10 @@
 .greeting {
     width: 100%;
     height: auto;
-    background-color: #eee;
+    /* background-color: #eee; */
     margin: 0 auto;
-    padding: 25rem 0 25rem 0;
+    padding: 10rem 0 10rem 0;
+    border: medium solid lightgray;
 }
 
 .greeting p {
@@ -92,9 +94,12 @@
     width: 100%;
     height: auto;
     padding-top: 3rem;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     display: block;
     text-align: center;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    border: medium solid lightgray;
 }
 
 .title p:nth-child(1) {
@@ -180,10 +185,10 @@
 .map {
     width: 100%;
     height: auto;
-    background-color: aquamarine;
     padding-top: 5rem;
-    /* margin-top 5rem; */
+    padding-bottom: 200px;
     margin: 0 auto;
+    border: medium solid lightgray;
 }
 
 #map {
@@ -207,15 +212,19 @@
 .transport {
     width: 100%;
     height: auto;
-    font-size: 2rem;
-    background-color: burlywood;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 200px;
+    margin: 0 auto;
+    border: medium solid lightgray;
 }
 
 .transport p {
     text-align: center;
     margin-bottom: 2rem;
+}
+
+.transport p:nth-child(1) {
+    margin-bottom: 5rem;
 }
 
 #subway p:nth-child(1),
@@ -243,17 +252,17 @@
 }
 
 .account-info {
-    margin: 5rem 0;
+    width: 100%;
+    height: auto;
+    padding-top: 5rem;
+    padding-bottom: 200px;
+    border: medium solid lightgray;
 }
 
 .account-info p {
     text-align: center;
-    margin: 0;
-}
-
-.account-info p {
+    margin: 5rem;
     font-weight: bold;
-    font-size: 1.5rem;
 }
 
 .account-info button {

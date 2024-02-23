@@ -5,7 +5,9 @@ import React, { useState } from 'react';
 const AccountSection = ({ title, accounts, onCopy }) => {
     return (
         <div>
-            <li className='li' style={{ fontWeight: 'bold' }}>{title}</li>
+            <li className="li" style={{ fontWeight: 'bold' }}>
+                {title}
+            </li>
             <div className="divide"></div>
             {accounts.map((account, index) => (
                 <div className="account-row" key={index}>
@@ -64,7 +66,7 @@ const Account = () => {
                     <div className="modal-box">
                         <div className="modal-content">
                             <div className="modal-context-m">
-                                <ul className='ul'>
+                                <ul className="ul">
                                     {currentAccount && (
                                         <AccountSection
                                             title={currentAccount === 'acc_m' ? '신랑측' : '신부측'}
@@ -84,8 +86,7 @@ const Account = () => {
                 </div>
             )}
             <div className="account-info">
-                <p>마음 전하실 곳</p>
-                <br />
+                <p style={{ fontSize: '2.2rem', marginBottom: '4rem' }}>마음 전하실 곳</p>
                 <button className="acc-btn1" onClick={handleAccount} id="acc_m">
                     신랑측 계좌번호 보기
                 </button>
