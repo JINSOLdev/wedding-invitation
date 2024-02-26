@@ -14,7 +14,6 @@
 
 .container {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* font-family: 'Nanum Myeongjo', serif; */
     font-weight: 400;
     font-style: normal;
     scroll-behavior: smooth;
@@ -40,27 +39,48 @@
 
 /* main-info */
 .main-info {
-    margin-top: 100px;
+    margin-top: 30px;
+    margin-bottom: 15rem;
 }
+
 .main-info-title p {
     justify-content: center;
     align-items: center;
     display: flex;
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: 0.8rem;
 }
-.main-info-location p {
-    font-size: 1.8rem;
+
+.main-info-title p:nth-child(1) {
+    font-size: 2.8rem;
+    margin-bottom: 4rem;
+}
+
+.main-info-title p:nth-child(2) {
+    margin-bottom: 6rem;
+}
+
+.main-info-title p span {
+    font-size: 2rem;
+}
+
+.main-info-location {
     text-align: center;
-    margin: 10px;
+    font-size: 2.3rem;
+    margin-bottom: 7rem;
+}
+
+.main-info-location p:nth-child(1) {
+    margin-bottom: 3rem;
 }
 
 /* main-text */
 .main-text {
     width: 100%;
     height: auto;
-    padding: 20rem 0 20rem 0;
-    background: linear-gradient(to bottom, white, rgba(211, 211, 211, 0.45), white);
+    padding: 10rem 0 10rem 0;
+    /* background: linear-gradient(to bottom, white, rgba(255, 182, 193, 0.404) white); */
+    border: 1px solid lightgrey;
 }
 
 .main-text p {
@@ -74,20 +94,17 @@
 .greeting {
     width: 100%;
     height: auto;
-    /* background-color: rgba(211, 211, 211, 0.16); */
     margin: 0 auto;
     padding: 10rem 0 10rem 0;
-    border: 1px solid lightgray;
-    margin-bottom: 9rem;
+    /* border: 1px solid lightgray; */
+    margin-bottom: 4rem;
+    /* background: linear-gradient(to bottom, white, rgba(255, 182, 193, 0.404) white); */
+    background: linear-gradient(to bottom, white, rgba(255, 182, 193, 0.404), white);
 }
 
 .greeting p {
     font-size: 2.2rem;
 }
-
-/* .greeting div {
-    margin-bottom: 11rem;
-} */
 
 /* Calendar */
 .calendar {
@@ -199,7 +216,7 @@
 }
 
 .map p:nth-child(2) {
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 
 /* transport */
@@ -465,11 +482,10 @@
     height: auto;
     margin: 5rem auto;
     padding: 3rem;
-    /* border: 1px solid lightgray; */
 }
 
 .notice-text p:nth-child(1) {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 4rem;
 }
 
@@ -484,6 +500,7 @@
 }
 
 .rights {
+    font-size: 1.2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;

@@ -6,6 +6,9 @@ export default function Greeting() {
                 <br />
                 <p>모든 분들께</p> <br />
                 <br />
+                <br />
+                <br />
+                <br />
             </div>
             <div>
                 <p>4월의 따스한 어느 봄날,</p>
@@ -32,6 +35,9 @@ export default function Greeting() {
                 <p>큰 기쁨으로 간직하겠습니다.</p>
                 <br />
                 <br />
+                <br />
+                <br />
+                <br />
             </div>
 
             <div>
@@ -46,6 +52,10 @@ export default function Greeting() {
                 <br />
                 <p>항상 건강하고 평안하시길 바랍니다.</p>
             </div>
+            <br />
+            <br />
+            <br />
+            <br />
             <br />
             <br />
             <p>감사합니다.</p>
