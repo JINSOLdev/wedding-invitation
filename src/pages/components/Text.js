@@ -18,7 +18,7 @@ export default function MainText() {
             <br />
             <br />
             <br />
-            <p style={{ fontSize: '1.9rem' }}>- 박미라 , 아름다운 날에 부치다 中 - </p> <br />
+            <p style={{ fontSize: '1.9rem' }}>- 박미라 , '아름다운 날에 부치다' 중에서 - </p> <br />
             <br />
             <br />
             <br />
