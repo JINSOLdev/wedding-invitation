@@ -58,10 +58,8 @@
 .main-text {
   width: 100%;
   height: auto;
-  /* background-color: rgba(255, 182, 193, 0.253); */
-  margin: 200px 0 100px 0;
   padding: 20rem 0 20rem 0;
-  border: thin solid lightgrey;
+  /* border: thin solid lightgrey; */
 }
 
 .main-text p {
@@ -93,13 +91,11 @@
 .calendar {
   width: 100%;
   height: auto;
-  padding-top: 3rem;
-  /* background-color: antiquewhite; */
   display: block;
   text-align: center;
   padding-top: 150px;
-  padding-bottom: 200px;
-  border: medium solid lightgray;
+  /* padding-bottom: 200px; */
+  /* border: medium solid lightgray; */
 }
 
 .title p:nth-child(1) {
@@ -185,10 +181,8 @@
 .map {
   width: 100%;
   height: auto;
-  padding-top: 5rem;
-  padding-bottom: 200px;
   margin: 0 auto;
-  border: medium solid lightgray;
+  padding-top: 150px;
 }
 
 #map {
@@ -210,17 +204,15 @@
 
 /* transport */
 .transport {
-  width: 80%;
+  width: 90%;
   height: auto;
-  margin: 0 auto;
+  margin: 3rem 3rem;
+  padding-top: 5rem;
   display: block;
   text-align: center;
 }
 
 /* Account */
-.padding {
-  padding-top: 1.5rem;
-}
 
 .divide {
   margin: 0.5rem;
@@ -230,17 +222,11 @@
   justify-content: center;
 }
 
-.ul {
-  padding: 0;
-  /* display: none; */
-}
-
 .account-info {
   width: 100%;
   height: auto;
-  padding-top: 5rem;
-  padding-bottom: 200px;
-  border: medium solid lightgray;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
 }
 
 .account-info p {
@@ -285,16 +271,18 @@
 .account-row-column-text li {
   font-size: 1.3rem;
   margin: 0.6rem 0 0 1rem;
+  list-style-type: none;
 }
 
 .modal-wrap {
   margin: 0 auto;
   display: flex;
   position: relative;
-  top: -4rem;
+  top: 22rem;
   justify-content: center;
   z-index: 1;
   animation: fadeIn 200ms ease-in-out forwards;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .modal-box {
@@ -362,9 +350,11 @@
   border: none;
   background: lightpink;
   color: white;
-  font-size: 1.4rem;
-  width: 17rem;
-  height: 4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 25rem;
+  height: 5rem;
 }
 
 @keyframes fadein {
@@ -378,29 +368,26 @@
   }
 }
 
-.li {
-  list-style-type: none;
-}
-
 /* contact */
 .contact {
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 30rem;
-  font-size: 1.5rem;
 }
 
 .num {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 4rem;
   font-weight: bold;
 }
 
 .contact-box {
   display: flex;
-  font-size: 1.5rem;
   justify-content: space-evenly;
+  padding-top: 2rem;
+  font-size: 1.7rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 1px solid lightgray;
 }
 
 .parents-contact p {
@@ -423,6 +410,7 @@
 
 .parents {
   margin: 0 0 1rem 0.7rem;
+  padding: 1rem;
 }
 
 .parent p {

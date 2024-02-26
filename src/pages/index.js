@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 
 import Account from "./components/Account";
 import Contact from "./components/Contact";
@@ -28,11 +27,6 @@ export default function Home() {
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
           crossOrigin="anonymous"
         ></link>
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-          crossOrigin="anonymous"
-        ></script>
       </Head>
       <div className="container">
         <div className="text">THE WEDDING DAY</div>
@@ -47,6 +41,11 @@ export default function Home() {
         <Contact />
         <Gallery />
         <Notice />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossOrigin="anonymous"
+        ></script>
       </div>
     </>
   );

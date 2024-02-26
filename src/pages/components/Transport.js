@@ -2,6 +2,7 @@ export default function Transport() {
   return (
     <div className="transport">
       <div class="accordion">
+        <p style={{ fontSize: "2.2rem", fontWeight: "bold" }}>오시는 길</p>
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button
@@ -11,7 +12,7 @@ export default function Transport() {
               data-bs-target="#collapseOne"
               aria-expanded="true"
               aria-controls="collapseOne"
-              style={{ fontSize: "1.3rem", fontWeight: "bold" }}
+              style={{ fontSize: "1.7rem", fontWeight: "bold" }}
             >
               지하철
             </button>
@@ -21,7 +22,7 @@ export default function Transport() {
             class="accordion-collapse collapse show"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body">
+            <div class="accordion-body" style={{ fontSize: "1.5rem" }}>
               <p>
                 <strong>2호선, 5호선 충정로역 하차</strong>
               </p>
@@ -39,7 +40,7 @@ export default function Transport() {
               data-bs-target="#collapseTwo"
               aria-expanded="false"
               aria-controls="collapseTwo"
-              style={{ fontSize: "1.3rem", fontWeight: "bold" }}
+              style={{ fontSize: "1.7rem", fontWeight: "bold" }}
             >
               버스
             </button>
@@ -49,7 +50,7 @@ export default function Transport() {
             class="accordion-collapse collapse"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body">
+            <div class="accordion-body" style={{ fontSize: "1.5rem" }}>
               <p>
                 <strong>한국경제신문사 앞</strong> : 7011, 7013 A/B, 7017
               </p>
@@ -74,7 +75,7 @@ export default function Transport() {
               data-bs-target="#collapseThree"
               aria-expanded="false"
               aria-controls="collapseThree"
-              style={{ fontSize: "1.3rem", fontWeight: "bold" }}
+              style={{ fontSize: "1.7rem", fontWeight: "bold" }}
             >
               자동차
             </button>
@@ -84,9 +85,11 @@ export default function Transport() {
             class="accordion-collapse collapse"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body">
+            <div class="accordion-body" style={{ fontSize: "1.5rem" }}>
               <strong>서소문성지역사박문관 공영주차장</strong>
-              <p>서울특별시 중구 칠패로 5</p>
+              <p>
+                <strong>서울특별시 중구 칠패로 5</strong>
+              </p>
               <p>
                 성당 내 주차가 불가한 점 안내 드립니다. <br />
                 주차권은 접수 테이블에서 받아주세요. (2시간 무료)
