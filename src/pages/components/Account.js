@@ -30,7 +30,7 @@ const Account = () => {
 
     const accounts = {
         acc_m: [
-            { name: '아버지 신희찬', accountNumber: '기업 486-009145-01-084' },
+            { name: '아버지 신희찬', accountNumber: '국민 276701-04-097556' },
             { name: '어머니 정수희', accountNumber: '우리 39908019266' },
         ],
         acc_w: [
