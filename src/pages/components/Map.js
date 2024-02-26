@@ -46,9 +46,6 @@ export default function Map() {
             <p style={{ margin: '3rem 0 3rem 0', fontWeight: 'bold' }}>장소</p>
             <p>천주교 중림동 약현성당</p>
             <div id="map" style={{ width: '90%', height: '500px' }} />
-            <br />
-            <br />
-            <br />
         </div>
     );
 }

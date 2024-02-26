@@ -2,7 +2,6 @@ export default function Transport() {
     return (
         <div className="transport">
             <div className="accordion">
-                <p style={{ fontSize: '2.2rem', fontWeight: 'bold' }}>오시는 길</p>
                 <div className="accordion-item">
                     <h2 className="accordion-header">
                         <button
@@ -12,7 +11,7 @@ export default function Transport() {
                             data-bs-target="#collapseOne"
                             aria-expanded="true"
                             aria-controls="collapseOne"
-                            style={{ fontSize: '1.7rem', fontWeight: 'bold' }}
+                            style={{ fontSize: '2rem', fontWeight: 'bold' }}
                         >
                             지하철
                         </button>
@@ -36,13 +35,13 @@ export default function Transport() {
                             data-bs-target="#collapseTwo"
                             aria-expanded="false"
                             aria-controls="collapseTwo"
-                            style={{ fontSize: '1.7rem', fontWeight: 'bold' }}
+                            style={{ fontSize: '2rem', fontWeight: 'bold' }}
                         >
                             버스
                         </button>
                     </h2>
                     <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div className="accordion-body" style={{ fontSize: '1.5rem' }}>
+                        <div className="accordion-body" style={{ fontSize: '1.5rem', fontWeight: 'normal' }}>
                             <p>
                                 <strong>한국경제신문사 앞</strong> : 7011, 7013 A/B, 7017
                             </p>
@@ -51,7 +50,7 @@ export default function Transport() {
                             </p>
                             <p>
                                 <strong>충정로 4번 출구</strong> : 1100, 1200, 1300, 1301, 1400, 1500
-                                <p style={{ marginLeft: '2.3rem' }}>M6118, 172, 472, 603</p>
+                                <p style={{ marginLeft: '1.9rem' }}>M6118, 172, 472, 603</p>
                             </p>
                         </div>
                     </div>
@@ -65,7 +64,7 @@ export default function Transport() {
                             data-bs-target="#collapseThree"
                             aria-expanded="false"
                             aria-controls="collapseThree"
-                            style={{ fontSize: '1.7rem', fontWeight: 'bold' }}
+                            style={{ fontSize: '2rem', fontWeight: 'bold' }}
                         >
                             자동차
                         </button>

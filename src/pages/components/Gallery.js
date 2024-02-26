@@ -2,8 +2,7 @@
 
 import { useState, useRef } from 'react';
 
-// 밖에로 빼고, 컴포넌트 밖에서 사용하는 변수는 대문자로 작명하는 것이 좋다.
-const NumImage = 5; // 등록된 이미지의 개수
+const NumImage = 4; // 등록된 이미지의 개수
 export default function Gallery() {
     const [startX, setStartX] = useState(null);
     const [currentX, setCurrentX] = useState(null);
@@ -33,17 +32,13 @@ export default function Gallery() {
 
     return (
         <div className="carousel-wrapper">
-            <p style={{ fontSize: '2rem', fontWeight: 'bold' }}>갤러리</p>
-            <br />
-            <br />
+            <p>갤러리</p>
             <div className="carousel" ref={carouselRef} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
                 <img src={`./picture01.jpg`} />
                 <img src={`./picture02.jpg`} />
                 <img src={`./picture03.jpg`} />
-                <img src={`./picture04.jpg`} />
                 <img src={`./picture05.jpg`} />
             </div>
-            <div className="divide-line" />
         </div>
     );
 }
