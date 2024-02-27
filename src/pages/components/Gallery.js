@@ -3,6 +3,7 @@
 import { useState, useRef } from 'react';
 
 const NumImage = 4; // 등록된 이미지의 개수
+
 export default function Gallery() {
     const [startX, setStartX] = useState(null);
     const [startY, setStartY] = useState(null);
@@ -42,6 +43,20 @@ export default function Gallery() {
         setDraggingIndex(newIndexClamped);
     };
 
+    const renderIndicators = () => {
+        const indicators = [];
+        for (let i = 0; i < NumImage; i++) {
+            indicators.push(<div key={i} className={`indicator ${draggingIndex === i ? 'active' : ''}`} onClick={() => handleIndicatorClick(i)} />);
+        }
+        return indicators;
+    };
+
+    const handleIndicatorClick = (index) => {
+        const newIndexClamped = Math.min(Math.max(index, 0), NumImage - 1);
+        carouselRef.current.style.transform = `translateX(-${newIndexClamped * 100}%)`;
+        setDraggingIndex(newIndexClamped);
+    };
+
     return (
         <div className="carousel-wrapper">
             <p>갤러리</p>
@@ -51,6 +66,7 @@ export default function Gallery() {
                 <img src={`./picture03.jpg`} />
                 <img src={`./picture05.jpg`} />
             </div>
+            <div className="indicators">{renderIndicators()}</div>
         </div>
     );
 }
