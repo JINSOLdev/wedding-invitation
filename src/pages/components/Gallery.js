@@ -5,6 +5,7 @@ import { useState, useRef } from 'react';
 const NumImage = 4; // 등록된 이미지의 개수
 export default function Gallery() {
     const [startX, setStartX] = useState(null);
+    const [startY, setStartY] = useState(null);
     const [currentX, setCurrentX] = useState(null);
     const [isDragging, setIsDragging] = useState(false);
     const [draggingIndex, setDraggingIndex] = useState(0);
@@ -18,7 +19,16 @@ export default function Gallery() {
 
     const handleTouchMove = (e) => {
         if (!isDragging) return;
-        setCurrentX(e.touches[0].pageX);
+
+        // 사진 확대해도 슬라이드 넘어가지 않도록 수정
+        const diffX = Math.abs(e.touches[0].pageX - startX);
+        const diffY = Math.abs(e.touches[0].pageY - startY);
+        if (diffX - diffY + 5) {
+            e.preventDefault();
+            setCurrentX(e.touches[0].pageX);
+        } else {
+            setIsDragging(false);
+        }
     };
 
     const handleTouchEnd = () => {
