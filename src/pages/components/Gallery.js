@@ -5,6 +5,7 @@ import { useState, useRef } from 'react';
 const NumImage = 4; // 등록된 이미지의 개수
 export default function Gallery() {
     const [startX, setStartX] = useState(null);
+    const [startY, setStartY] = useState(null);
     const [currentX, setCurrentX] = useState(null);
     const [isDragging, setIsDragging] = useState(false);
     const [draggingIndex, setDraggingIndex] = useState(0);
@@ -12,6 +13,7 @@ export default function Gallery() {
 
     const handleTouchStart = (e) => {
         setStartX(e.touches[0].pageX);
+        setStartY(e.touches[0].pageY);
         setCurrentX(e.touches[0].pageX);
         setIsDragging(true);
     };
@@ -19,11 +21,11 @@ export default function Gallery() {
     const handleTouchMove = (e) => {
         if (!isDragging) return;
 
-        // 확대 여부 확인
-        const isZoomIn = window.innerWidth !== window.outerWidth || window.innerHeight !== window.outerHeight;
+        const diffX = Math.abs(e.touches[0].pageX - startX);
+        const diffY = Math.abs(e.touches[0].pageY - startY);
 
-        // 확대되어 있지 않은 경우에만 슬라이드 동작
-        if (!isZoomIn) {
+        // X축 이동이 Y축 이동보다 크면 슬라이드 동작
+        if (diffX > diffY) {
             e.preventDefault();
             setCurrentX(e.touches[0].pageX);
         } else {
