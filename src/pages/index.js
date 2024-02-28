@@ -35,7 +35,7 @@ export default function Home() {
                 <Greeting />
                 <Calendar />
                 <Map />
-                <Navigation />
+                {/* <Navigation /> */}
                 <Transport />
                 <Contact />
                 <Account />
