@@ -11,6 +11,7 @@ import Map from './components/Map';
 import Notice from './components/Notice';
 import Text from './components/Text';
 import Transport from './components/Transport';
+import Navigation from './components/Navigation';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -34,6 +35,7 @@ export default function Home() {
                 <Greeting />
                 <Calendar />
                 <Map />
+                <Navigation />
                 <Transport />
                 <Contact />
                 <Account />
@@ -46,6 +48,12 @@ export default function Home() {
                     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
                     crossOrigin="anonymous"
                 ></script>
+                <script
+                    src="https://t1.kakaocdn.net/kakao_js_sdk/${VERSION}/kakao.min.js"
+                    integrity="sha384-6MFdIr0zOira1CHQkedUqJVql0YtcZA1P0nbPrQYJXVJZUkTk/oX4U9GhUIs3/z8}"
+                    crossOrigin="anonymous"
+                ></script>
+                <script>Kakao.init('a1ce4afbaf941a2fbe0dae37ff1df3da')</script>
             </div>
         </>
     );
