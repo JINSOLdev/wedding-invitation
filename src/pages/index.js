@@ -37,7 +37,6 @@ export default function Home() {
                 <Transport />
                 <Contact />
                 <Account />
-                <div className="divide-line"></div>
                 <Gallery />
                 <div className="divide-line"></div>
                 <Notice />
