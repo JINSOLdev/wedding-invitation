@@ -17,7 +17,7 @@ export default function Transport() {
                         </button>
                     </h2>
                     <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div className="accordion-body" style={{ fontSize: '1.5rem' }}>
+                        <div className="accordion-body" style={{ fontSize: '1.6rem' }}>
                             <p>
                                 <strong>2호선, 5호선 충정로역 하차</strong>
                             </p>
@@ -41,7 +41,7 @@ export default function Transport() {
                         </button>
                     </h2>
                     <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div className="accordion-body" style={{ fontSize: '1.5rem', fontWeight: 'normal' }}>
+                        <div className="accordion-body" style={{ fontSize: '1.6rem', fontWeight: 'normal' }}>
                             <p>
                                 <strong>한국경제신문사 앞</strong> : 7011, 7013 A/B, 7017
                             </p>
@@ -50,8 +50,8 @@ export default function Transport() {
                             </p>
                             <p>
                                 <strong>충정로 4번 출구</strong> : 1100, 1200, 1300, 1301, 1400, 1500
-                                <p style={{ marginLeft: '1.9rem' }}>M6118, 172, 472, 603</p>
                             </p>
+                            <p style={{ marginLeft: '1.9rem' }}>M6118, 172, 472, 603</p>
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ export default function Transport() {
                         </button>
                     </h2>
                     <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div className="accordion-body" style={{ fontSize: '1.5rem' }}>
+                        <div className="accordion-body" style={{ fontSize: '1.6rem' }}>
                             <strong>서소문성지역사박문관 공영주차장</strong>
                             <p>
                                 <strong>서울특별시 중구 칠패로 5</strong>
