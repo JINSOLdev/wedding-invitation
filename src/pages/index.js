@@ -59,7 +59,7 @@ export default function Home() {
           integrity="sha384-6MFdIr0zOira1CHQkedUqJVql0YtcZA1P0nbPrQYJXVJZUkTk/oX4U9GhUIs3/z8}"
           crossOrigin="anonymous"
         ></script>
-        <script>Kakao.init('a1ce4afbaf941a2fbe0dae37ff1df3da')</script>
+        {/* <script>Kakao.init('a1ce4afbaf941a2fbe0dae37ff1df3da')</script> */}
       </div>
     </>
   );
