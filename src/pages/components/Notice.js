@@ -2,7 +2,7 @@ export default function Notice() {
     return (
         <div className="notice">
             <div className="notice-text">
-                <p><span> 안내 드립니다. </span> </p>
+                <p>안내 드립니다.</p>
                 <p>
                     <strong>성당 규정상 화환은 정중히 사양합니다.</strong>
                 </p>
