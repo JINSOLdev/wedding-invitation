@@ -71,7 +71,7 @@ export default function Transport() {
                     </h2>
                     <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div className="accordion-body" style={{ fontSize: '1.6rem' }}>
-                            <strong>서소문성지역사박문관 공영주차장</strong>
+                            <strong>서소문성지역사박물관 공영주차장</strong>
                             <p>
                                 <strong>서울특별시 중구 칠패로 5</strong>
                             </p>
