@@ -33,6 +33,7 @@
 .main-info {
     margin-top: 30px;
     margin-bottom: 15rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .main-info-title p {
@@ -40,18 +41,19 @@
     align-items: center;
     display: flex;
     font-size: 2.5rem;
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.5rem;
 }
 
 .main-info-title p:nth-child(1) {
     font-size: 2.8rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
 .main-info-title p:nth-child(2) {
     margin-bottom: 6rem;
+    font-weight: 555;
 }
 
 .main-info-title p span {
@@ -61,6 +63,7 @@
 .main-info-location {
     text-align: center;
     font-size: 2.3rem;
+    font-weight: 555;
     margin-bottom: 7rem;
 }
 
@@ -82,6 +85,7 @@
     justify-content: center;
     font-size: 3rem;
     font-family: 'Nanum Brush Script', cursive;
+    font-weight: 555;
 }
 
 /* greeting */
@@ -93,7 +97,9 @@
     /* border: 1px solid lightgray; */
     margin-bottom: 4rem;
     /* background: linear-gradient(to bottom, white, rgba(255, 182, 193, 0.404) white); */
-    background: linear-gradient(to bottom, white, rgba(255, 182, 193, 0.404), white);
+    background: linear-gradient(to bottom, white, rgba(253, 213, 220, 0.404), white);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 555;
 }
 
 .greeting p {
@@ -125,11 +131,12 @@
     border: 0.7px solid rgb(218, 218, 218);
 }
 .title p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 555;
     font-size: 1.7rem;
     margin: 0 auto;
     padding-left: 1rem;
     padding-bottom: 1rem;
-    letter-spacing: 0.8rem;
     text-align: center;
 }
 .desc {
@@ -203,7 +210,9 @@
     max-width: 800px;
 }
 
-.map p {
+.map p:nth-child(1) {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 555;
     font-size: 3rem;
     text-align: center;
     margin-bottom: 2rem;
@@ -211,6 +220,7 @@
 
 .map p:nth-child(2) {
     font-size: 2.3rem;
+    font-weight: 548;
 }
 
 /* navigation */
@@ -234,6 +244,67 @@
     text-align: center;
 }
 
+
+/* contact */
+.contact {
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.num {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    font-weight: 555;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 555;
+}
+
+.contact-1-call img,
+.contact-1-msg img {
+    width: 2.5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0.6;
+}
+
+.parent {
+    padding: 4rem 2rem 1rem 2rem;
+    background-color: rgba(211, 211, 211, 0.16);
+    border-radius: 1.5rem;
+}
+
+.parents {
+    margin-bottom: 1.2rem;
+    padding: 1rem;
+}
+
+.parent p {
+    margin-bottom: 2rem;
+}
+
+.icon {
+    margin-bottom: 0.8rem;
+}
+
+.account-row-column-text li:nth-child(2) {
+    font-size: 1.2rem;
+}
+
 /* Account */
 
 .divide {
@@ -249,12 +320,13 @@
     height: auto;
     padding-top: 15rem;
     padding-bottom: 15rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .account-info p {
     text-align: center;
     margin: 5rem;
-    font-weight: bold;
+    font-weight: 555;
 }
 
 .account-info button {
@@ -263,7 +335,6 @@
     margin-bottom: 1rem;
     border-radius: 1.3rem;
     border: none;
-    /* background: lightpink; */
     color: white;
 }
 
@@ -271,6 +342,8 @@
 #acc_w {
     width: 35rem;
     height: 10rem;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-weight: 480;
 }
 
 .acc-btn1,
@@ -307,12 +380,11 @@
     justify-content: center;
     z-index: 1;
     animation: fadeIn 200ms ease-in-out forwards;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .modal-box {
     position: absolute;
-    background: rgba(255, 182, 193, 0.863);
+    background: pink;
     width: 48rem;
     border-radius: 3rem;
     margin: 4rem auto;
@@ -374,8 +446,8 @@
     margin-bottom: 1rem;
     border-radius: 1.5rem;
     border: none;
-    background: rgba(255, 182, 193, 0.7);
-    color: white;
+    background: rgba(253, 213, 220, 0.404);
+    color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
@@ -383,7 +455,7 @@
     height: 5rem;
 }
 
-@keyframes fadein {
+/* @keyframes fadein {
     0% {
         transform: scale(0, 0);
         opacity: 0;
@@ -392,65 +464,7 @@
         transform: scale(1, 1);
         opacity: 1;
     }
-}
-
-/* contact */
-.contact {
-    margin-top: 15rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.num {
-    font-size: 3rem;
-    margin-bottom: 4rem;
-    font-weight: bold;
-}
-
-.contact-box {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 2rem;
-    font-size: 2rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.contact-1-call img,
-.contact-1-msg img {
-    width: 2.5rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
-}
-
-.buttons {
-    display: flex;
-    justify-content: space-evenly;
-    opacity: 0.6;
-}
-
-.parent {
-    padding: 4rem 2rem 1rem 2rem;
-    background-color: rgba(211, 211, 211, 0.16);
-    border-radius: 1.5rem;
-}
-
-.parents {
-    margin-bottom: 1.2rem;
-    padding: 1rem;
-}
-
-.parent p {
-    margin-bottom: 2rem;
-}
-
-.icon {
-    margin-bottom: 0.8rem;
-}
-
-.account-row-column-text li:nth-child(2) {
-    font-size: 1.2rem;
-}
+} */
 
 /* gallery */
 .carousel-wrapper {
@@ -462,7 +476,8 @@
 }
 
 .carousel-wrapper p {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     display: flex;
     flex-direction: row;
@@ -512,16 +527,22 @@
     height: auto;
     margin: 5rem auto;
     padding: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .notice-text p:nth-child(1) {
     font-size: 2.5rem;
-    margin-bottom: 4rem;
+    font-weight: 555;
+    margin-bottom: 3rem;
 }
 
 .notice-text p:nth-child(2) {
     font-size: 2.2rem;
-    margin-bottom: 1.3rem;
+    margin-bottom: 2.3rem;
+}
+
+.notice-text p:nth-child(4) {
+    margin-bottom: 2.5rem;
 }
 
 .notice-text p {
@@ -529,6 +550,7 @@
     text-align: center;
 }
 
+/* rights */
 .rights {
     font-size: 1.2rem;
     display: flex;

@@ -71,9 +71,9 @@ export default function Calendar() {
   };
   return (
     <div className="calendar">
-      <div className="title" style={{ fontFamily: "serif" }}>
+      <div className="title">
         <p>날짜</p>
-        <p>2024.04.06</p>
+        <p style={{letterSpacing:"0.5rem"}}>2024.04.06</p>
         <div className="desc">토요일 오전 11시</div>
       </div>
       <div className="divide-line" />

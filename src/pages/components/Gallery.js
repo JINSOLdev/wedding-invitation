@@ -69,7 +69,7 @@ export default function Gallery() {
 
   return (
     <div className="carousel-wrapper">
-      <p style={{ fontFamily: "serif" }}>갤러리</p>
+      <p>갤러리</p>
       <div
         className="carousel"
         ref={carouselRef}

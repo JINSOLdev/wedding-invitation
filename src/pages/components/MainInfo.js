@@ -1,6 +1,6 @@
 export default function MainInfo() {
   return (
-    <div className="main-info" style={{ fontFamily: "serif" }}>
+    <div className="main-info">
       <div className="main-info-title">
         <p>The Wedding Of</p>
         <p>

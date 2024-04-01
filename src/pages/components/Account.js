@@ -88,13 +88,13 @@ const Account = () => {
           </div>
         </div>
       )}
-      <div className="account-info" style={{ fontFamily: "serif" }}>
-        <p style={{ fontSize: "3rem", marginBottom: "4rem" }}>마음 전하실 곳</p>
+      <div className="account-info">
+        <p style={{ fontSize: "2.5rem", marginBottom: "4rem" }}>마음 전하실 곳</p>
         <button
           className="acc-btn1"
           onClick={handleAccount}
           id="acc_m"
-          style={{ fontSize: "2.5rem" }}
+          style={{ fontSize: "2.3rem" }}
         >
           신랑측
         </button>
@@ -102,7 +102,7 @@ const Account = () => {
           className="acc-btn2"
           onClick={handleAccount}
           id="acc_w"
-          style={{ fontSize: "2.5rem" }}
+          style={{ fontSize: "2.3rem" }}
         >
           신부측
         </button>
