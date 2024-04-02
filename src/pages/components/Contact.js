@@ -53,7 +53,9 @@ const parentsContacts = {
 export default function Contact() {
     return (
         <div className="contact">
-            <p className="num">연락처</p>
+            <p className="num" style={{ fontWeight: 555 }}>
+                연락처
+            </p>
             <div className="contact-box">
                 <ParentContact title="신랑측" contacts={parentsContacts.groom} />
                 <ParentContact title="신부측" contacts={parentsContacts.bride} />
