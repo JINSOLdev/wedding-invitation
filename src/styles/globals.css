@@ -223,16 +223,12 @@
     font-weight: 548;
 }
 
-/* navigation */
-.navi_container {
-    width: 100%;
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navi_app {
+/* kakaomap */
+.kakao-map {
+    height: auto;
+    display: block;
+    margin: 2rem;
+    text-align: center;
 }
 
 /* transport */
@@ -243,7 +239,6 @@
     display: block;
     text-align: center;
 }
-
 
 /* contact */
 .contact {

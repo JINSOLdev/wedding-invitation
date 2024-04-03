@@ -16,10 +16,7 @@ export default function Document() {
                 <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet" crossOrigin="anonymous" />
             </Head>
             <body>
-                <script
-                    strategy="beforeInteractive"
-                    src="{`//dapi.kakao.com/v2/maps/sdk.js?appkey=${43782e8b922330ff3f4bb1637d038b59}&libraries=services&autoload=false`}"
-                ></script>
+                
                 <Main />
                 <NextScript />
             </body>
