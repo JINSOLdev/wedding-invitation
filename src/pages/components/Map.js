@@ -1,17 +1,12 @@
 'use client';
 
+import React, { userEffect } from 'react';
+import KakaoMapScript from './KakaoMapScript.js';
+
 export default function Map() {
-    return (
-        <div className="map">
-            <p
-                style={{
-                    margin: '3rem 0 3rem 0',
-                }}
-            >
-                장소
-            </p>
-            <p>천주교 중림동 약현성당</p>
-            <img src="location.png"></img>
-        </div>
-    );
+    userEffect(() => {
+        KakaoMapScript();
+    }, []);
+
+    return <div id="myMap" style={{ width: '90%', height: '400px', display: 'block', margin: '2rem', textAlign: 'center' }}></div>;
 }

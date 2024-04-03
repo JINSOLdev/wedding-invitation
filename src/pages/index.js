@@ -11,7 +11,6 @@ import Map from './components/Map';
 import Notice from './components/Notice';
 import Text from './components/Text';
 import Transport from './components/Transport';
-import KakaoMap from './components/KakaoMap';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -35,7 +34,6 @@ export default function Home() {
                 <Greeting />
                 <Calendar />
                 <Map />
-                <KakaoMap />
                 <Transport />
                 <Contact />
                 <Account />
